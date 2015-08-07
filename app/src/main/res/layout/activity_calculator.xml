@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".CalculatorActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarThumbVertical="@color/history_text"
+        android:fillViewport="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Enter any TWO values and press Calculate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/primary" />
+
+        <EditText
+            android:id="@+id/edit_cost_price"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableBottom="@color/primaryDark"
+            android:ems="10"
+            android:hint="@string/cost_price"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/hint_text" />
+
+        <EditText
+            android:id="@+id/edit_sale_price"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableBottom="@color/primaryDark"
+            android:ems="10"
+            android:hint="@string/sp"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/hint_text" />
+
+        <EditText
+            android:id="@+id/edit_margin"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableBottom="@color/primaryDark"
+            android:ems="10"
+            android:hint="@string/margin"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/hint_text" />
+
+        <EditText
+            android:id="@+id/edit_markup"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableBottom="@color/primaryDark"
+            android:ems="10"
+            android:hint="@string/markup"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/hint_text" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/butcalculate"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rect_shape"
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"
+                android:text="Calculate"
+                android:textColor="@android:color/white"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp" />
+
+            <Button
+                android:id="@+id/butreset"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:background="@drawable/round_rect_shape_reset"
+                android:clickable="false"
+                android:text="Reset"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#eeeeee"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="15dp"
+                android:text="Results"
+                android:layout_gravity="top|bottom|center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <ListView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#eeeeee"
+            android:scrollbarThumbVertical="@drawable/scroll_style"
+            android:dividerHeight="1dp"
+            android:id="@+id/history_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:fastScrollEnabled="true"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    </ScrollView>
+</LinearLayout>
