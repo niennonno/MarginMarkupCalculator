@@ -1,28 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:versionCode="3"
-    android:versionName="2.0.1"
-    package="org.example.adityavikram.marginmarkupcalculator" >
+    package="com.mapplinks.X"
+    android:versionCode="6"
+    android:versionName="1.1" >
 
     <uses-sdk
-        android:targetSdkVersion="22"
-        android:minSdkVersion="16"/>
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:logo="@mipmap/icon"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".CalculatorActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name" >
+            android:name="com.mapplinks.calculator.CalculatorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="66e75f968d97d5ce0a03fba8d7b1439647b39c5c" />
+
+        <activity
+            android:name="com.mapplinks.calculator.FeedbackActivity"
+            android:label="Feedback" >
+        </activity>
+        <activity
+            android:name="com.mapplinks.calculator.SettingsActivity"
+            android:label="@string/title_activity_settings" >
         </activity>
     </application>
 

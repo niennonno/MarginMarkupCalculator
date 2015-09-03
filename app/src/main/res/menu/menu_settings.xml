@@ -1,21 +1,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".CalculatorActivity"
-    >
-        <item
-            android:title="Add Tax"
-            android:id="@+id/add_tax_menu"
-            android:showAsAction="never" />
+    tools:context="mapplinks.example.adityavikram.calculator.SettingsActivity">
+    <item
+        android:title="Add Tax"
+        android:id="@+id/add_tax_menu"
+        android:showAsAction="never" />
     <item
         android:title="Share"
         android:id="@+id/share"
         android:showAsAction="never" />
-        <item
-            android:title="Rate Us"
-            android:id="@+id/rate"
-            android:showAsAction="never" />
-        <item
+    <item
+        android:title="Rate Us"
+        android:id="@+id/rate"
+        android:showAsAction="never" />
+    <item
         android:title="Feedback"
         android:id="@+id/feedback"
         android:showAsAction="never" />

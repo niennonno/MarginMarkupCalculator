@@ -1,4 +1,4 @@
-package org.example.adityavikram.marginmarkupcalculator;
+package com.mapplinks.calculator;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

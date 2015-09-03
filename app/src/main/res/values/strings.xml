@@ -1,12 +1,17 @@
 <resources>
     <string name="app_name">Margin Markup Calculator</string>
     <string name="Title">Fill Up Any Two Fields:</string>
-    <string name="cost_price">COST PRICE: </string>
-    <string name="sp">SALE PRICE: </string>
-    <string name="margin">MARGIN: </string>
-    <string name="markup">MARKUP: </string>
+    <string name="cost_price">COST PRICE </string>
+    <string name="sp">SALE PRICE </string>
+    <string name="margin">MARGIN </string>
+    <string name="markup">MARKUP </string>
     <string name="Calculate">CALCULATE</string>
     <string name="Reset">RESET</string>
+    <string name="Taxes">Taxes</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 
 </resources>
